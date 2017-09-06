@@ -7,10 +7,18 @@ import time
 import re
 
 
-target_url = "https://www.asus.com/OfficialSiteAPI.asmx/GetModelResults?WebsiteId=1&ProductLevel2Id=1849&FiltersCategory=2542&Filters=&Sort=3&PageNumber=1&PageSize=999"
+# wireless_router_product = "https://www.asus.com/OfficialSiteAPI.asmx/GetModelResults?WebsiteId=1&ProductLevel2Id=1849&FiltersCategory=2542&Filters=&Sort=3&PageNumber=1&PageSize=999"
+# response = requests.get(wireless_router_product)
 
 
-response = requests.get(target_url)
+all_networking_product = "https://www.asus.com/OfficialSiteAPI.asmx/GetModelResults?WebsiteId=1&ProductLevel2Id=1849&FiltersCategory=&Filters=&Sort=3&PageNumber=1&PageSize=999"
+response = requests.get(all_networking_product)
+
+
+
+
+
+
 json_data = json.loads(response.text)
 # print data
 
