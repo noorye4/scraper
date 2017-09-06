@@ -50,15 +50,15 @@ for product in products:
                 objs = download_json["Result"]["Obj"][0]["Files"]
                 for obj in objs:
 
-                    print  obj["Title"]
-                    print  obj["Version"]
-                    print  obj["FileSize"]
-                    print  obj["ReleaseDate"]
+                    # print  obj["Title"]
+                    # print  obj["Version"]
+                    # print  obj["FileSize"]
+                    # print  obj["ReleaseDate"]
                     # print  obj["Description"]
 
                     print  obj["DownloadUrl"]["Global"]
-                    index += 1
-                print index,"-"*20
-
+                    # index += 1
+                # print index,"-"   *20
+# 
 
 
